@@ -1,0 +1,7 @@
+:root {
+  --color-primary: #7f0836;
+  --color-secondary: #000000;
+  --color-bg: linear-gradient(180deg, #ffb4c4 0%, #feca98 100%);
+  --color-contrast: #ffffff;
+  --color-hover: #ffb4c4;
+}
