@@ -1,6 +1,6 @@
-import linkedIn from '/images/linkedin-rounded-border-svgrepo-com.svg';
-import youtube from '/images/youtube-rounded-square-logo-svgrepo-com.svg';
-import github from '/images/github-svgrepo-com.svg';
+import linkedIn from '/images/linkedin.png';
+import youtube from '/images/youtube.png';
+import github from '/images/github-white.png';
 
 const Header = () => {
   return (

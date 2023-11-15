@@ -5,15 +5,16 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   justify-content: center;
-  border: 1px solid var(--color-primary);
-  padding: 0.5em;
-  gap: 0.5em;
-  background-color: var(--color-primary);
+  border: 1px solid var(--color-bg);
+  padding: 0.75em;
+  gap: 0.75em;
+  background-color: var(--color-bg);
 }
 
 .tech-grid div {
   border-radius: 5px;
-  /* border: 1px solid black; */
+  overflow: hidden;
+  box-shadow: var(--boxshadow);
 }
 
 .tech-grid #box-1 {
@@ -33,13 +34,31 @@
 .tech-grid #box-6 {
   grid-column: 2 / 4;
   grid-row: 2 / 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.tech-grid #box-6 h2 {
+  font-size: 20px;
 }
 
 .tech-grid #box-7 {
   grid-column: 4 / 5;
   grid-row: 3 / 5;
+  display: flex;
+  flex-direction: column;
 }
 
 .tech-grid #box-8 {
   grid-column: 1 / 3;
+  display: flex;
+}
+
+.tech-grid #box-9 img {
+  width: 90%;
+  height: 90%;
+  margin-top: 5%;
 }

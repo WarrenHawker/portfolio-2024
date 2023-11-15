@@ -21,7 +21,7 @@ iframe {
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
-  background: var(--color-bg);
+  background: url('/public/images/background.svg');
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
