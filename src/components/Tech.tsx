@@ -1,18 +1,18 @@
-import reactImg from '/images/react.png';
-import nextImg from '/images/next-js.jpeg';
-import typescriptImg from '/images/typescript.png';
-import githubImg from '/images/github.jpg';
-import htmlcssjsImg from '/images/html-css-js.png';
-import contentfulImg from '/images/contentful.svg';
-import wordpressImg from '/images/wordpress.svg';
-import postgresImg from '/images/postgres.png';
-import mongoImg from '/images/mongodb.png';
-import nodeImg from '/images/nodejs.png';
-import expressImg from '/images/expressjs.png';
+import reactImg from '/images/logos/react.png';
+import nextImg from '/images/logos/next-js.jpeg';
+import typescriptImg from '/images/logos/typescript.png';
+import githubImg from '/images/logos/github.jpg';
+import htmlcssjsImg from '/images/logos/html-css-js.png';
+import contentfulImg from '/images/logos/contentful.svg';
+import wordpressImg from '/images/logos/wordpress.svg';
+import postgresImg from '/images/logos/postgres.png';
+import mongoImg from '/images/logos/mongodb.png';
+import nodeImg from '/images/logos/nodejs.png';
+import expressImg from '/images/logos/expressjs.png';
 
 const Tech = () => {
   return (
-    <section className="tech-grid">
+    <div className="tech-grid">
       <div id="box-1">
         <img src={reactImg} />
         <img src={typescriptImg} />
@@ -44,7 +44,7 @@ const Tech = () => {
       <div id="box-9">
         <img src={contentfulImg} />
       </div>
-    </section>
+    </div>
   );
 };
 

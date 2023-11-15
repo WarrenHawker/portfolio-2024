@@ -1,6 +1,6 @@
-import linkedIn from '/images/linkedin.png';
-import youtube from '/images/youtube.png';
-import github from '/images/github-white.png';
+import linkedIn from '/images/logos/linkedin.png';
+import youtube from '/images/logos/youtube.png';
+import github from '/images/logos/github-white.png';
 
 const Header = () => {
   return (
