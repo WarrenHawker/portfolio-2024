@@ -19,7 +19,9 @@ header .nav-items {
 header .nav-items a {
   text-decoration: none;
   color: var(--color-secondary);
-  font-weight: var(--font-bold);
+  font-weight: var(--font-reg);
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 
 header .nav-items a:hover {

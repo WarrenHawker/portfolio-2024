@@ -42,6 +42,10 @@ footer {
   padding: 1em;
 }
 
+.view-title {
+  letter-spacing: 2px;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

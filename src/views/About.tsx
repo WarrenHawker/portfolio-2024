@@ -3,7 +3,7 @@ import Tech from '../components/Tech';
 const About = () => {
   return (
     <section className="view" id="about">
-      <h1>About me</h1>
+      <h1 className="view-title">About me</h1>
       <div className="grid">
         <article>
           <h2 className="sub-title">
