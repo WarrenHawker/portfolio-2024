@@ -14,35 +14,35 @@ const Tech = () => {
   return (
     <div className="tech-grid">
       <div id="box-1">
-        <img src={reactImg} />
-        <img src={typescriptImg} />
+        <img src={reactImg} alt="reactjs logo" />
+        <img src={typescriptImg} alt="typescript logo" />
       </div>
       <div id="box-2">
-        <img src={nextImg} />
+        <img src={nextImg} alt="nextjs logo" />
       </div>
       <div id="box-3">
-        <img src={wordpressImg} />
+        <img src={wordpressImg} alt="wordpress logo" />
       </div>
       <div id="box-4">
-        <img src={postgresImg} />
-        <img src={mongoImg} />
+        <img src={postgresImg} alt="postreSQL logo" />
+        <img src={mongoImg} alt="mongoDB logo" />
       </div>
       <div id="box-5">
-        <img src={githubImg} />
+        <img src={githubImg} alt="github logo" />
       </div>
       <div id="box-6">
         <h1>Technologies</h1>
         <h2>That I have experience with</h2>
       </div>
       <div id="box-7">
-        <img src={nodeImg} />
-        <img src={expressImg} />
+        <img src={nodeImg} alt="nodejs logo" />
+        <img src={expressImg} alt="expressjs logo" />
       </div>
       <div id="box-8">
-        <img src={htmlcssjsImg} />
+        <img src={htmlcssjsImg} alt="htm/css/js logo" />
       </div>
       <div id="box-9">
-        <img src={contentfulImg} />
+        <img src={contentfulImg} alt="contentful logo" />
       </div>
     </div>
   );
