@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Tech from '../components/Tech';
+import TechGrid from '../components/Tech-Grid';
 import Layout from '../components/layout/Layout';
 import Overlay from '../components/Overlay';
 import { useState } from 'react';
@@ -54,21 +54,23 @@ const About = () => {
               </button>
             </div>
           </article>
-          <Tech />
+          <TechGrid />
         </div>
       </section>
       <Overlay
         header={
           <>
             <h1>Curriculum Vitae</h1>
-            <a
-              href="warren-hawker-cv.pdf"
-              download="Warren_Hawker_CV"
-              target="_blank"
-              className="btn btn-download"
-            >
-              Download CV
-            </a>
+            <div className="button-container">
+              <a
+                href="warren-hawker-cv.pdf"
+                download="Warren_Hawker_CV"
+                target="_blank"
+                className="btn btn-download"
+              >
+                Download CV
+              </a>
+            </div>
           </>
         }
         isOpen={showCV}

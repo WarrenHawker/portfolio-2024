@@ -1,0 +1,40 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 400px);
+  margin-top: 5em;
+  padding: 1em;
+  justify-content: center;
+  gap: 2em;
+}
+
+.project {
+  width: 400px;
+  height: 500px;
+  border-radius: 5px;
+  box-shadow: var(--boxshadow);
+  /* background-color: #423540; */
+  background-color: #473b48;
+  background-color: #545b74;
+  padding: 0.25em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project h2 {
+  text-align: center;
+}
+
+.project img {
+  width: auto;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.btn-project-link {
+  background-color: var(--color-primary);
+  color: var(--colo-black);
+}

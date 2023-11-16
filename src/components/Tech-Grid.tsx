@@ -11,7 +11,7 @@ import nodeImg from '/images/logos/nodejs.png';
 import expressImg from '/images/logos/expressjs.png';
 import { useRef, useState, useEffect } from 'react';
 
-const Tech = () => {
+const TechGrid = () => {
   const [dimensions, setDimensions] = useState({
     height: window.innerHeight,
     width: window.innerWidth,
@@ -74,4 +74,4 @@ const Tech = () => {
   );
 };
 
-export default Tech;
+export default TechGrid;
