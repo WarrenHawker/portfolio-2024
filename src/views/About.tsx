@@ -11,17 +11,20 @@ const About = () => {
             Developer from the UK.
           </h2>
           <p>
-            Technology can be used to enhance people's lives, but only if the
-            interfaces are well thought out and easily accessible.
+            I specialise in making <strong>Clean and Intuitive </strong>web apps
+            that anyone can use. My goal is always to think of the end-user
+            first.
           </p>
           <p>
-            I am proud to make web apps and interfaces that anyone can use. My
-            goal is always to think of the end-user first.
+            <strong>Highly Motivated and Inquisitive,</strong> I am always
+            looking for new ways to improve the apps I make.
           </p>
-          <p>
-            I am a highly motivated and inquisitive developer, always looking
-            for new ways to improve the apps I make.
-          </p>
+          <a href="#projects" className="btn btn-primary">
+            View my recent work
+          </a>
+          <a href="#projects" className="btn btn-secondary">
+            View my recent work
+          </a>
         </article>
         <Tech />
       </div>

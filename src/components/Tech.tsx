@@ -9,10 +9,37 @@ import postgresImg from '/images/logos/postgres.png';
 import mongoImg from '/images/logos/mongodb.png';
 import nodeImg from '/images/logos/nodejs.png';
 import expressImg from '/images/logos/expressjs.png';
+import { useRef, useState, useEffect } from 'react';
 
 const Tech = () => {
+  const [dimensions, setDimensions] = useState({
+    height: window.innerHeight,
+    width: window.innerWidth,
+  });
+  const gridRef = useRef<HTMLDivElement>(null);
+
+  const handleResize = () => {
+    setDimensions({
+      height: window.innerHeight,
+      width: window.innerWidth,
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  useEffect(() => {
+    if (gridRef.current) {
+      gridRef.current.style.height = `${
+        gridRef.current.getBoundingClientRect().width
+      }px`;
+    }
+  }, [dimensions]);
+
   return (
-    <div className="tech-grid">
+    <div className="tech-grid" ref={gridRef}>
       <div id="box-1">
         <img src={reactImg} alt="reactjs logo" />
         <img src={typescriptImg} alt="typescript logo" />
