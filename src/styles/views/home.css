@@ -1,5 +1,5 @@
 #home {
-  margin-top: 10em;
+  margin-top: 5em;
 }
 
 #home .profile-pic {
@@ -10,6 +10,11 @@
 }
 
 #home article {
-  justify-self: center;
   align-self: center;
+}
+
+@media screen and (max-width: 600px) {
+  #home {
+    margin-top: 0;
+  }
 }

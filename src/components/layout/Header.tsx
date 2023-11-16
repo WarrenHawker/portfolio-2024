@@ -1,20 +1,22 @@
 import linkedIn from '/images/logos/linkedin.png';
 import youtube from '/images/logos/youtube.png';
 import github from '/images/logos/github-white.png';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
+  const url = useLocation().pathname;
   return (
     <header>
       <nav>
         <ul>
-          <li className="nav-items">
-            <a href="#home">Home</a>
+          <li className={url == '/' ? 'nav-items active' : 'nav-items'}>
+            <Link to="/">Home</Link>
           </li>
-          <li className="nav-items">
-            <a href="#about">About</a>
+          <li className={url == '/about' ? 'nav-items active' : 'nav-items'}>
+            <Link to="/about">About</Link>
           </li>
-          <li className="nav-items">
-            <a href="#projects">Projects</a>
+          <li className={url == '/projects' ? 'nav-items active' : 'nav-items'}>
+            <Link to="/projects">Projects</Link>
           </li>
         </ul>
       </nav>
