@@ -1,0 +1,15 @@
+#home {
+  margin-top: 10em;
+}
+
+#home .profile-pic {
+  max-width: 500px;
+  height: auto;
+  box-shadow: var(--boxshadow);
+  border-radius: 50%;
+}
+
+#home article {
+  justify-self: center;
+  align-self: center;
+}
