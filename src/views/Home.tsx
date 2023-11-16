@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Layout from '../components/layout/Layout';
 import profileImg from '/images/profile-pic2.png';
 
@@ -9,26 +10,29 @@ const Home = () => {
           <article>
             <h1 className="view-title">Hi there!</h1>
             <h2 className="sub-title">
-              My name is <strong>Warren</strong>, I'm a Web Developer from the
-              UK.
+              My name is <strong>Warren</strong> and I'm a Web Developer from
+              the UK.
             </h2>
 
             <p>
-              I specialise in making <strong>Clean and Intuitive </strong>web
-              apps that anyone can use. My goal is always to think of the
-              end-user first.
+              I specialise in making <strong>Clean and Intuitive </strong> web
+              apps using Javascript.
+            </p>
+            <p>
+              My goal is always to think of the end-user first, to make apps
+              that anyone can use.
             </p>
 
             <div className="button-container">
-              <a href="#projects" className="btn btn-secondary">
+              <Link to="/about" className="btn btn-secondary">
                 Learn more about me
-              </a>
-              <a href="#projects" className="btn btn-primary">
+              </Link>
+              <Link to="/projects" className="btn btn-primary">
                 View my recent work
-              </a>
+              </Link>
             </div>
           </article>
-          <img src={profileImg} className="profile-pic" />
+          <img src={profileImg} className="profile-pic" alt="profile picture" />
         </div>
       </section>
     </Layout>

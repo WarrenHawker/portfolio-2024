@@ -6,6 +6,7 @@
 @import url(./components/tech-grid.css);
 @import url(./components/button.css);
 @import url(./views/home.css);
+@import url(./views/about.css);
 /* CSS Resets */
 *,
 *::before,
@@ -69,4 +70,9 @@ main {
 
 .sub-title {
   color: var(--color-secondary);
+}
+
+hr {
+  margin: 2em 0;
+  max-width: 500px;
 }

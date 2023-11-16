@@ -58,8 +58,7 @@ const Tech = () => {
         <img src={githubImg} alt="github logo" />
       </div>
       <div id="box-6">
-        <h1>Technologies</h1>
-        <h2>That I have experience with</h2>
+        <h1>Technologies that I work with</h1>
       </div>
       <div id="box-7">
         <img src={nodeImg} alt="nodejs logo" />
