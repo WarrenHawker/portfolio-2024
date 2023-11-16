@@ -7,6 +7,8 @@
 @import url(./components/button.css);
 @import url(./views/home.css);
 @import url(./views/about.css);
+@import url(./components/overlay.css);
+@import url(./components/cv.css);
 /* CSS Resets */
 *,
 *::before,
@@ -38,6 +40,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  position: relative;
 }
 
 main,

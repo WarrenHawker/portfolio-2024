@@ -8,6 +8,7 @@
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
   box-shadow: var(--boxshadow);
+  cursor: pointer;
 }
 
 .btn:hover {

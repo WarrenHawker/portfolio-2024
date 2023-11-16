@@ -24,11 +24,11 @@ const Home = () => {
             </p>
 
             <div className="button-container">
-              <Link to="/about" className="btn btn-secondary">
-                Learn more about me
-              </Link>
               <Link to="/projects" className="btn btn-primary">
                 View my recent work
+              </Link>
+              <Link to="/about" className="btn btn-secondary">
+                Learn more about me
               </Link>
             </div>
           </article>

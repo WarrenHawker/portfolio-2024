@@ -1,8 +1,12 @@
 import { Link } from 'react-router-dom';
 import Tech from '../components/Tech';
 import Layout from '../components/layout/Layout';
+import Overlay from '../components/Overlay';
+import { useState } from 'react';
+import CV from '../components/CV';
 
 const About = () => {
+  const [showCV, setShowCV] = useState(false);
   return (
     <Layout>
       <section className="view" id="about">
@@ -27,23 +31,50 @@ const About = () => {
             </p>
 
             <p>
-              Because of this, my design philosophy is to build clean, minimal
-              UIs that anyone can use. I have found that sometimes the smallest
-              details have a huge impact on the overall user experience. When
-              I'm working on a project, I try to put myself in the shoes of the
-              people I currently work with; People with a great many things to
-              do, and no time to waste figuring out some finnicky piece of
-              software.
+              Because of this my design philosophy is to build <br />
+              <strong>clean and minimal UIs</strong> that anyone can use. I have
+              found that sometimes the smallest details have a huge impact on
+              the overall user experience.
+            </p>
+            <p>
+              When I'm working on a project I try to put myself in the shoes of
+              the people I've worked with in leisure. People with a great many
+              things to do, and no time to waste figuring out some finnicky
+              piece of software.
             </p>
             <div className="button-container">
               <Link to="/projects" className="btn btn-primary">
                 View my recent work
               </Link>
+              <button
+                className="btn btn-secondary"
+                onClick={() => setShowCV(true)}
+              >
+                View CV
+              </button>
             </div>
           </article>
           <Tech />
         </div>
       </section>
+      <Overlay
+        header={
+          <>
+            <h1>Curriculum Vitae</h1>
+            <a
+              href="warren-hawker-cv.pdf"
+              download="Warren_Hawker_CV"
+              target="_blank"
+              className="btn btn-download"
+            >
+              Download CV
+            </a>
+          </>
+        }
+        isOpen={showCV}
+        setIsOpen={setShowCV}
+        children={<CV />}
+      />
     </Layout>
   );
 };

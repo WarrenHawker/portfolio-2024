@@ -1,0 +1,11 @@
+.btn-download {
+  margin: 0 auto;
+  height: 50px;
+  background-color: var(--color-primary);
+  color: var(--color-black);
+  font-weight: var(--font-bold);
+}
+
+object {
+  border-radius: 10px;
+}
