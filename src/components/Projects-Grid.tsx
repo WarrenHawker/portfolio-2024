@@ -21,7 +21,12 @@ const ProjectsGrid = () => {
             }}
           >
             <h2>{item.title}</h2>
-            <img src={item.images[0]} alt={`image for ${item.title} project`} />
+            <div className="image-container">
+              <img
+                src={item.images[0]}
+                alt={`image for ${item.title} project`}
+              />
+            </div>
             <div className="button-container">
               <a
                 href={item.deploymentUrl}

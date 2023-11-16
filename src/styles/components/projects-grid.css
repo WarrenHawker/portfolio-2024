@@ -10,10 +10,8 @@
 .project {
   width: 400px;
   height: 500px;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: var(--boxshadow);
-  /* background-color: #423540; */
-  background-color: #473b48;
   background-color: #545b74;
   padding: 0.25em;
   cursor: pointer;
@@ -28,10 +26,16 @@
   text-align: center;
 }
 
-.project img {
+.project .image-container {
   width: auto;
-  height: 300px;
+  height: 325px;
   border-radius: 5px;
+  grid-column: 2 / 3;
+}
+
+.project .image-container img {
+  width: auto;
+  max-height: 325px;
 }
 
 .btn-project-link {

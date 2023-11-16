@@ -1,5 +1,6 @@
 import { ProjectData } from '../types/projects.type';
 import neilColeyImg1 from '/images/screenshots/neil-coley-1.png';
+import profile from '/images/profile-pic.png';
 
 export const Projects: ProjectData[] = [
   {
@@ -13,7 +14,7 @@ export const Projects: ProjectData[] = [
     keep updated thanks to Contentful CMS, which lets the band leaders quickly upload new gigs, 
     news posts and videos, as well as change any of the text on the site without needing to code anything.</p>
     `,
-    images: [neilColeyImg1],
+    images: [neilColeyImg1, profile, neilColeyImg1, profile, neilColeyImg1],
     deploymentUrl: 'https://neilcoleyband.co.uk/',
     githubUrl: 'https://github.com/WarrenHawker/neil-coley-band',
     isCommission: true,

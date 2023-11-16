@@ -2,3 +2,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+.focused-project .tech-stack {
+  margin: 0;
+}
+
+.focused-project img {
+  border-radius: 10px;
+}
