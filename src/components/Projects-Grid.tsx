@@ -1,10 +1,13 @@
 import { useState } from 'react';
-import { Projects } from '../data/projects.data';
 import { ProjectData } from '../types/projects.type';
 import Overlay from './Overlay';
 import FocusedProject from './Focused-Project';
 
-const ProjectsGrid = () => {
+interface Props {
+  projects: ProjectData[];
+}
+
+const ProjectsGrid = ({ projects }: Props) => {
   const [focusedProject, setFocusedProject] = useState<ProjectData | null>(
     null
   );
@@ -12,8 +15,9 @@ const ProjectsGrid = () => {
   return (
     <>
       <section className="projects-grid">
-        {Projects.map((item) => (
+        {projects.map((item, index) => (
           <article
+            key={index}
             className="project"
             onClick={() => {
               setFocusedProject(item);

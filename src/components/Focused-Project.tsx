@@ -37,6 +37,7 @@ const FocusedProject = ({ project }: Props) => {
           <motion.img
             key={project.images[shownImage]}
             src={project.images[shownImage]}
+            alt={`image for ${project.title} project`}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}

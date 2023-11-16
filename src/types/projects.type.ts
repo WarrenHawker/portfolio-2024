@@ -1,4 +1,5 @@
 export type Technology =
+  | 'All'
   | 'Reactjs'
   | 'Nextjs'
   | 'Typescript'
