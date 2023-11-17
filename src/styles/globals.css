@@ -31,8 +31,6 @@ body {
   margin: 0;
   font-family: 'Lato', sans-serif;
   background: url('/images/background.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
   min-height: 100vh;
   height: max-content;
   backdrop-filter: blur(5px);

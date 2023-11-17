@@ -17,7 +17,6 @@ const ProjectFilter = ({ filter, setFilter }: Props) => {
   ];
   return (
     <div className="filter ">
-      <h2>Click the buttons below to filter projects by technology</h2>
       <div className="button-container">
         {filters.map((item, index) => (
           <button
