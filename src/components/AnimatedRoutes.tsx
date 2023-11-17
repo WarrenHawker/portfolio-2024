@@ -15,6 +15,7 @@ const AnimatedRoutes = () => {
           <Route path="/projects" element={<Projects />} />
         </Route>
       </Routes>
+      //{' '}
     </AnimatePresence>
   );
 };
