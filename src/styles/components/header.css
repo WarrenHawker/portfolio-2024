@@ -29,12 +29,11 @@ header .nav-items a:hover {
 }
 
 header .social-links img {
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 header .social-links img:hover {
   transform: scale(1.1);
-  transition: all 0.3s ease-in-out;
 }
 
 .nav-items.active a {
@@ -124,7 +123,7 @@ nav input[type='checkbox']:checked ~ .hamburger-lines .line3 {
     left: 0;
     width: 200px;
     box-shadow: var(--boxshadow);
-    transform: translateX(-300px);
+    transform: translateX(-200px);
     transition: transform 0.5s ease-in-out;
     border-radius: 5px;
     z-index: 10;
