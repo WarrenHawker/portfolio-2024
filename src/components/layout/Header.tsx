@@ -28,16 +28,16 @@ const Header = () => {
       </nav>
       <div className="social-links">
         <a href="https://www.linkedin.com/in/warren-hawker/" target="_blank">
-          <img src={linkedIn} alt="linkedin logo" />
+          <img src={linkedIn} alt="linkedin logo" width="40px" height="40px" />
         </a>
         <a
           href="https://www.youtube.com/@programmingwithmist3897"
           target="_blank"
         >
-          <img src={youtube} alt="youtube logo" />
+          <img src={youtube} alt="youtube logo" width="40px" height="40px" />
         </a>
         <a href="https://github.com/WarrenHawker" target="_blank">
-          <img src={github} alt="github logo" />
+          <img src={github} alt="github logo" width="40px" height="40px" />
         </a>
       </div>
     </header>

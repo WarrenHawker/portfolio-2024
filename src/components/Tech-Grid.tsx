@@ -41,34 +41,34 @@ const TechGrid = () => {
   return (
     <div className="tech-grid" ref={gridRef}>
       <div id="box-1">
-        <img src={reactImg} alt="reactjs logo" />
-        <img src={typescriptImg} alt="typescript logo" />
+        <img src={reactImg} alt="reactjs logo" loading="lazy" />
+        <img src={typescriptImg} alt="typescript logo" loading="lazy" />
       </div>
       <div id="box-2">
-        <img src={nextImg} alt="nextjs logo" />
+        <img src={nextImg} alt="nextjs logo" loading="lazy" />
       </div>
       <div id="box-3">
-        <img src={wordpressImg} alt="wordpress logo" />
+        <img src={wordpressImg} alt="wordpress logo" loading="lazy" />
       </div>
       <div id="box-4">
-        <img src={postgresImg} alt="postreSQL logo" />
-        <img src={mongoImg} alt="mongoDB logo" />
+        <img src={postgresImg} alt="postreSQL logo" loading="lazy" />
+        <img src={mongoImg} alt="mongoDB logo" loading="lazy" />
       </div>
       <div id="box-5">
-        <img src={githubImg} alt="github logo" />
+        <img src={githubImg} alt="github logo" loading="lazy" />
       </div>
       <div id="box-6">
         <h1>Technologies that I work with</h1>
       </div>
       <div id="box-7">
-        <img src={nodeImg} alt="nodejs logo" />
-        <img src={expressImg} alt="expressjs logo" />
+        <img src={nodeImg} alt="nodejs logo" loading="lazy" />
+        <img src={expressImg} alt="expressjs logo" loading="lazy" />
       </div>
       <div id="box-8">
-        <img src={htmlcssjsImg} alt="htm/css/js logo" />
+        <img src={htmlcssjsImg} alt="htm/css/js logo" loading="lazy" />
       </div>
       <div id="box-9">
-        <img src={contentfulImg} alt="contentful logo" />
+        <img src={contentfulImg} alt="contentful logo" loading="lazy" />
       </div>
     </div>
   );

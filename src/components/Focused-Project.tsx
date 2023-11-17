@@ -46,6 +46,7 @@ const FocusedProject = ({ project }: Props) => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ ease: 'easeInOut', duration: 1 }}
+            loading="lazy"
           />
         </AnimatePresence>
       </div>

@@ -1,9 +1,9 @@
 import { lazy, useState } from 'react';
 import { ProjectData } from '../types/projects.type';
-import FocusedProject from './Focused-Project';
 import { AnimatePresence, m } from 'framer-motion';
 
 const Overlay = lazy(() => import('../components/Overlay'));
+const FocusedProject = lazy(() => import('../components/Focused-Project'));
 
 interface Props {
   projects: ProjectData[];
@@ -65,6 +65,7 @@ const ProjectsGrid = ({ projects }: Props) => {
               <div className="image-container">
                 <img
                   src={item.images[0]}
+                  loading="lazy"
                   alt={`image for ${item.title} project`}
                 />
               </div>
