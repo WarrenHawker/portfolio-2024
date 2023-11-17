@@ -10,3 +10,17 @@
 .focused-project img {
   border-radius: 10px;
 }
+
+@media screen and (max-width: 600px) {
+  .focused-project {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    height: 90%;
+  }
+
+  .focused-project .left-col {
+    height: 50%;
+    overflow: auto;
+  }
+}

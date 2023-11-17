@@ -40,6 +40,7 @@ const ProjectsGrid = ({ projects }: Props) => {
           </>
         }
       />
+
       <section className="projects-grid">
         {projects.map((item, index) => (
           <article

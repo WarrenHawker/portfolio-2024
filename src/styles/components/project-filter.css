@@ -1,0 +1,33 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter .button-container {
+  flex-wrap: wrap;
+  max-width: 75%;
+  margin: auto;
+  justify-content: center;
+}
+
+.filter h2 {
+  color: #ffffff;
+  text-align: center;
+}
+
+.btn-filter {
+  padding: 0.5em 1.5em;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  opacity: 0.5;
+  background-color: var(--color-primary);
+  margin: 0;
+}
+
+.btn-filter:hover {
+  opacity: 1;
+}
+
+.btn-filter.active {
+  opacity: 1;
+}

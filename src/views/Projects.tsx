@@ -22,11 +22,15 @@ const Projects = () => {
 
   return (
     <Layout>
-      <section>
+      <div className="view" id="projects">
         <h1>Projects</h1>
+        <p className="projects-page-para">
+          This page contains a mixture of commissioned and personal projects.
+          Click on the cards for more details and images.
+        </p>
         <ProjectFilter filter={filter} setFilter={setFilter} />
         <ProjectsGrid projects={shownProjects} />
-      </section>
+      </div>
     </Layout>
   );
 };

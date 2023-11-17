@@ -8,7 +8,13 @@ const Header = () => {
   return (
     <header>
       <nav>
-        <ul>
+        <input type="checkbox" className="checkbox" />
+        <div className="hamburger-lines">
+          <span className="line line1"></span>
+          <span className="line line2"></span>
+          <span className="line line3"></span>
+        </div>
+        <ul className="nav-menu">
           <li className={url == '/' ? 'nav-items active' : 'nav-items'}>
             <Link to="/">Home</Link>
           </li>

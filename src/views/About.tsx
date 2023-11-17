@@ -9,9 +9,9 @@ const About = () => {
   const [showCV, setShowCV] = useState(false);
   return (
     <Layout>
-      <section className="view" id="about">
+      <div className="view" id="about">
         <h1 className="view-title">About me</h1>
-        <div className="grid">
+        <section className="grid">
           <article>
             <p>
               <strong>Highly Motivated and Inquisitive,</strong> I am always
@@ -55,28 +55,28 @@ const About = () => {
             </div>
           </article>
           <TechGrid />
-        </div>
-      </section>
-      <Overlay
-        header={
-          <>
-            <h1>Curriculum Vitae</h1>
-            <div className="button-container">
-              <a
-                href="warren-hawker-cv.pdf"
-                download="Warren_Hawker_CV"
-                target="_blank"
-                className="btn btn-download"
-              >
-                Download CV
-              </a>
-            </div>
-          </>
-        }
-        isOpen={showCV}
-        setIsOpen={setShowCV}
-        children={<CV />}
-      />
+        </section>
+        <Overlay
+          header={
+            <>
+              <h1>Curriculum Vitae</h1>
+              <div className="button-container">
+                <a
+                  href="warren-hawker-cv.pdf"
+                  download="Warren_Hawker_CV"
+                  target="_blank"
+                  className="btn btn-download"
+                >
+                  Download CV
+                </a>
+              </div>
+            </>
+          }
+          isOpen={showCV}
+          setIsOpen={setShowCV}
+          children={<CV />}
+        />
+      </div>
     </Layout>
   );
 };
