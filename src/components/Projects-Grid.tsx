@@ -14,6 +14,32 @@ const ProjectsGrid = ({ projects }: Props) => {
   const [openOverlay, setOpenOverlay] = useState(false);
   return (
     <>
+      <Overlay
+        isOpen={openOverlay}
+        setIsOpen={setOpenOverlay}
+        children={<FocusedProject project={focusedProject} />}
+        header={
+          <>
+            <h1>{focusedProject?.title}</h1>{' '}
+            <div className="button-container">
+              <a
+                href={focusedProject?.deploymentUrl}
+                className="btn btn-project-link"
+                target="_blank"
+              >
+                Deployed site
+              </a>
+              <a
+                href={focusedProject?.githubUrl}
+                className="btn btn-project-link"
+                target="_blank"
+              >
+                Github repo
+              </a>
+            </div>
+          </>
+        }
+      />
       <section className="projects-grid">
         {projects.map((item, index) => (
           <article
@@ -50,32 +76,6 @@ const ProjectsGrid = ({ projects }: Props) => {
           </article>
         ))}
       </section>
-      <Overlay
-        isOpen={openOverlay}
-        setIsOpen={setOpenOverlay}
-        children={<FocusedProject project={focusedProject} />}
-        header={
-          <>
-            <h1>{focusedProject?.title}</h1>{' '}
-            <div className="button-container">
-              <a
-                href={focusedProject?.deploymentUrl}
-                className="btn btn-project-link"
-                target="_blank"
-              >
-                Deployed site
-              </a>
-              <a
-                href={focusedProject?.githubUrl}
-                className="btn btn-project-link"
-                target="_blank"
-              >
-                Github repo
-              </a>
-            </div>
-          </>
-        }
-      />
     </>
   );
 };
