@@ -28,8 +28,7 @@ img {
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
-  background: url('/images/background.svg');
-  /* background-color: aliceblue; */
+  background: url('/images/background.webp');
   min-height: 100vh;
   height: max-content;
   backdrop-filter: blur(5px);
