@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ProjectData } from '../types/projects.type';
 import { useInterval } from 'usehooks-ts';
 import { AnimatePresence, motion } from 'framer-motion';
@@ -9,6 +9,10 @@ interface Props {
 
 const FocusedProject = ({ project }: Props) => {
   const [shownImage, setShownImage] = useState(0);
+
+  useEffect(() => {
+    setShownImage(0);
+  }, [project]);
 
   useInterval(() => {
     if (project) {

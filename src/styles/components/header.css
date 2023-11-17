@@ -129,6 +129,7 @@ nav input[type='checkbox']:checked ~ .hamburger-lines .line3 {
     transform: translateX(-300px);
     transition: transform 0.5s ease-in-out;
     border-radius: 5px;
+    z-index: 10;
   }
 
   nav input[type='checkbox']:checked ~ .nav-menu {

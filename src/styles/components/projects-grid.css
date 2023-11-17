@@ -27,18 +27,46 @@
 }
 
 .project .image-container {
-  width: auto;
+  width: 380px;
   height: 325px;
   border-radius: 5px;
   grid-column: 2 / 3;
+  margin: auto;
 }
 
 .project .image-container img {
-  width: auto;
+  max-width: 100%;
   max-height: 325px;
 }
 
 .btn-project-link {
   background-color: var(--color-primary);
   color: var(--colo-black);
+}
+
+@media screen and (max-width: 600px) {
+  .project {
+    max-width: 270px;
+    margin: auto;
+  }
+
+  .project .image-container {
+    width: 200px;
+    margin: auto;
+    height: 280px;
+  }
+
+  .project .image-container img {
+    width: auto;
+    height: auto;
+    max-width: 200px;
+  }
+
+  .project .button-container {
+    flex-direction: column;
+  }
+
+  .project .button-container .btn-project-link {
+    margin: 0 auto;
+  }
 }

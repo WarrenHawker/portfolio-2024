@@ -31,6 +31,10 @@ const Overlay = ({ children, isOpen, setIsOpen, header }: Props) => {
       }
     };
   }, []);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [isOpen]);
   return (
     <div className={isOpen ? 'overlay open' : 'overlay'} ref={overlayRef}>
       <div className="overlay-inner">

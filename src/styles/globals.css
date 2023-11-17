@@ -20,10 +20,8 @@
   box-sizing: border-box;
 }
 
-img,
-iframe {
+img {
   display: block;
-  width: 100%;
   margin: auto;
 }
 
