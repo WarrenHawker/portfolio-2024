@@ -11,6 +11,10 @@
   align-self: center;
 }
 
+.tech-grid img {
+  width: 100%;
+}
+
 .tech-grid div {
   border-radius: 5px;
   overflow: hidden;
