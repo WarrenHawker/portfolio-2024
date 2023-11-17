@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
 import TechGrid from '../components/Tech-Grid';
 import Layout from '../components/layout/Layout';
-import Overlay from '../components/Overlay';
-import { useState } from 'react';
+import { useState, lazy } from 'react';
 import CV from '../components/CV';
+
+const Overlay = lazy(() => import('../components/Overlay'));
 
 const About = () => {
   const [showCV, setShowCV] = useState(false);

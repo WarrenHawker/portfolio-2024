@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { ProjectData } from '../types/projects.type';
 import { useInterval } from 'usehooks-ts';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, m } from 'framer-motion';
 
 interface Props {
   project: ProjectData | null;
@@ -38,7 +38,7 @@ const FocusedProject = ({ project }: Props) => {
       </div>
       <div className="image-container">
         <AnimatePresence mode="wait">
-          <motion.img
+          <m.img
             key={project.images[shownImage]}
             src={project.images[shownImage]}
             alt={`image for ${project.title} project`}

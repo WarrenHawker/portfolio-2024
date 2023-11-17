@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { lazy, useState } from 'react';
 import { ProjectData } from '../types/projects.type';
-import Overlay from './Overlay';
 import FocusedProject from './Focused-Project';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, m } from 'framer-motion';
+
+const Overlay = lazy(() => import('../components/Overlay'));
 
 interface Props {
   projects: ProjectData[];
@@ -42,13 +43,13 @@ const ProjectsGrid = ({ projects }: Props) => {
         }
       />
 
-      <motion.section
+      <m.section
         className="projects-grid"
         key={projects.map((project) => project.title).join('-')}
       >
         <AnimatePresence>
           {projects.map((item, index) => (
-            <motion.article
+            <m.article
               key={index}
               className="project"
               initial={{ opacity: 0 }}
@@ -83,10 +84,10 @@ const ProjectsGrid = ({ projects }: Props) => {
                   Github repo
                 </a>
               </div>
-            </motion.article>
+            </m.article>
           ))}
         </AnimatePresence>
-      </motion.section>
+      </m.section>
     </>
   );
 };
