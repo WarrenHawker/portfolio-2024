@@ -1,6 +1,6 @@
-import linkedIn from '/images/logos/linkedin.png';
-import youtube from '/images/logos/youtube.png';
-import github from '/images/logos/github-white.png';
+import linkedIn from '/images/logos/linkedin.webp';
+import youtube from '/images/logos/youtube.webp';
+import github from '/images/logos/github-white.webp';
 import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {

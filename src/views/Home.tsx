@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import Layout from '../components/layout/Layout';
-import profileImg from '/images/profile-pic.png';
+import profileImg from '/images/profile-pic.webp';
 
 const Home = () => {
   return (

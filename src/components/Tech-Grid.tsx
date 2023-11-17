@@ -1,14 +1,14 @@
-import reactImg from '/images/logos/react.png';
-import nextImg from '/images/logos/next-js.jpeg';
-import typescriptImg from '/images/logos/typescript.png';
-import githubImg from '/images/logos/github.jpg';
-import htmlcssjsImg from '/images/logos/html-css-js.png';
-import contentfulImg from '/images/logos/contentful.svg';
-import wordpressImg from '/images/logos/wordpress.svg';
-import postgresImg from '/images/logos/postgres.png';
-import mongoImg from '/images/logos/mongodb.png';
-import nodeImg from '/images/logos/nodejs.png';
-import expressImg from '/images/logos/expressjs.png';
+import reactImg from '/images/logos/react.webp';
+import nextImg from '/images/logos/next-js.webp';
+import typescriptImg from '/images/logos/typescript.webp';
+import githubImg from '/images/logos/github.webp';
+import htmlcssjsImg from '/images/logos/html-css-js.webp';
+import contentfulImg from '/images/logos/contentful.webp';
+import wordpressImg from '/images/logos/wordpress.webp';
+import postgresImg from '/images/logos/postgres.webp';
+import mongoImg from '/images/logos/mongodb.webp';
+import nodeImg from '/images/logos/nodejs.webp';
+import expressImg from '/images/logos/expressjs.webp';
 import { useRef, useState, useEffect } from 'react';
 
 const TechGrid = () => {
