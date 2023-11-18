@@ -17,7 +17,21 @@ const ProjectFilter = ({ filter, setFilter }: Props) => {
   ];
   return (
     <div className="filter ">
-      <div className="button-container">
+      <label htmlFor="technology" className="technology-select-label">
+        Filter projects by technology
+      </label>
+      <select
+        name="technology"
+        className="technology-select"
+        onChange={(e) => setFilter(e.target.value)}
+      >
+        {filters.map((item, index) => (
+          <option key={index} value={item}>
+            {item}
+          </option>
+        ))}
+      </select>
+      <div className="button-container desktop">
         {filters.map((item, index) => (
           <button
             key={index}
