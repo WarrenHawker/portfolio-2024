@@ -9,13 +9,14 @@ interface Props {
 
 const FocusedProject = ({ project }: Props) => {
   const [shownImage, setShownImage] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
     setShownImage(0);
   }, [project]);
 
   useInterval(() => {
-    if (project) {
+    if (project && !isPaused) {
       const totalImages = project.images.length;
       if (shownImage == totalImages - 1) {
         setShownImage(0);
@@ -49,6 +50,14 @@ const FocusedProject = ({ project }: Props) => {
             loading="lazy"
           />
         </AnimatePresence>
+        <button
+          className="btn"
+          onClick={() => {
+            setIsPaused((prev) => !prev);
+          }}
+        >
+          {isPaused ? 'play' : 'pause'}
+        </button>
       </div>
     </article>
   );
