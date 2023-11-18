@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, 400px);
   margin-top: 5em;
-  padding: 1em;
   justify-content: space-between;
   gap: 2em;
 }
@@ -47,7 +46,6 @@
 @media screen and (max-width: 600px) {
   .project {
     max-width: 270px;
-    margin: auto;
   }
 
   .project .image-container {
