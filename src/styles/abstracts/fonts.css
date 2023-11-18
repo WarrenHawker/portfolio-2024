@@ -24,8 +24,7 @@ h3 {
 }
 
 p,
-label,
-input {
+label {
   color: var(--color-secondary);
   font-weight: var(--font-reg);
   max-width: 500px;

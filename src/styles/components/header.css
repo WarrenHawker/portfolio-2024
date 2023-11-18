@@ -92,8 +92,8 @@ nav input[type='checkbox']:checked ~ .hamburger-lines .line3 {
   display: block;
   height: 32px;
   width: 32px;
-  top: 20px;
-  left: 20px;
+  top: 14px;
+  left: 16px;
   z-index: 5;
   opacity: 0;
   cursor: pointer;
