@@ -39,3 +39,7 @@ strong {
   margin-left: 0.25em;
   margin-right: 0.25em;
 }
+
+.page-title {
+  font-size: clamp(1.25rem, 0.911rem + 1.6949vw, 2.5rem);
+}

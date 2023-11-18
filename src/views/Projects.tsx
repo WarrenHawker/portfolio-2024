@@ -23,7 +23,7 @@ const Projects = () => {
   return (
     <Layout>
       <div className="view" id="projects">
-        <h1>Projects</h1>
+        <h1 className="page-title">Projects</h1>
         <ProjectFilter filter={filter} setFilter={setFilter} />
         <ProjectsGrid projects={shownProjects} />
       </div>

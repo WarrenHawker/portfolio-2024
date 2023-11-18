@@ -8,7 +8,7 @@ const Home = () => {
       <section className="view" id="home">
         <div className="grid">
           <article>
-            <h1 className="view-title">Hi there!</h1>
+            <h1 className="page-title">Hi there!</h1>
             <h2 className="sub-title">
               My name is <strong>Warren</strong> and I'm a Web Developer from
               the UK.
