@@ -12,7 +12,7 @@ const About = () => {
   return (
     <Layout>
       <div className="view" id="about">
-        <h1 className="page-title">About me?!?!</h1>
+        <h1 className="page-title">About me?</h1>
         <section className="grid">
           <article>
             <p>
